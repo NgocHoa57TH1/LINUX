@@ -1,0 +1,33 @@
+#1
+$ cd /etc/init.d
+#pwd: hi?n th? directory hi?n hành
+#pwd -P: hi?n th? directory hi?n hành b? qua symlinks
+
+#2
+$ cd / && pwd && cd -P /etc/init.d && pwd && cd
+chuy?n t?i thý m?c / và hi?n th? thý m?c hi?n hành và di chuy?n t?i /etc/init.d (b? qua symlinks t?i th?ng thý m?c g?c) sau ðó hi?n th? thý m?c hi?n hành, cu?i cùng chuy?n v? home...
+
+$ cd / && pwd && cd -L /etc/init.d && pwd && cd ~
+
+chuy?n t?i thý m?c / và hi?n th? thý m?c hi?n hành và di chuy?n t?i /etc/init.d (theo symlinks) sau ðó hi?n th? thý m?c hi?n hành, cu?i cùng chuy?n v? home...
+
+
+#3
+$ cd /etc
+
+#4, 5
+- ls: li?t kê danh sách file trong thý m?c
+- ls -i: li?t kê file kèm ch? s?
+- ls -l: li?t kê ds file hi?n th? theo danh sách theo ð?nh d?ng danh sách dài
+- ls -a: li?t kê t?t c? file trong thý m?c, k? c? file ?n
+- ls -ila: t?ng h?p 3 tùy ch?n trên trong 1 l?nh
+
+#6
+While (Tr?ng): t?p tin 
+Blue (Xanh da tr?i): Thý m?c
+Green (Xanh lá): T?p d? li?u th?c thi ho?c ðý?c công nh?n
+Sky Blue (Xanh da tr?i nh?t): Symbolic link
+Yellow with black background: Thi?t b? ngo?i vi
+Pink: Graphic image file
+Red: file nén 
+Red with black background: Liên k?t b? h?ng

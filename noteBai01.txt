@@ -1,0 +1,10 @@
+-	L?nh touch: t?o ra m?t FILE tr?ng m?i. Cú pháp: touch [OPTION]…FILE…
+-	L?nh cat có 3 ch?c nãng:
+•	Xem n?i dung file: cat   TenFile 
+•	T?o File:
+	o	cat > TenFile 
+	o	> “ N?i dung file”
+	o	>”…”
+	o	^D ð? k?t thúc
+
+•	Copy File: copy n?i dung file 1 sang file 2: cat    file1 > file2

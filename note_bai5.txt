@@ -1,0 +1,59 @@
+# 1
+# date: Hi?n th? ngày hi?n t?i
+# pwd: hi?n thý m?c hi?n t?i
+# ls: li?t kê t?p tin
+# who: li?t kê ngý?i dùng hi?n t?i
+# su: g?i quy?n qu?n tr?
+# cal: hi?n l?ch
+# cat: xem n?i dung file
+# head: 
+# tail: 
+# more: 
+
+#$ pwd
+#/home/kiennt/Documents/Linux/BaiTapLinux/bai5
+
+#2
+$ cat > thegioimang.txt
+Chào m?ng các b?n ð?n v?i di?n ðàn M?ng Máy Tính -
+wWw.TheGioiMang.oRg. Nõi giao lýu trao ð?i và chia s? các ki?n th? M?ng
+Máy Tính nói riêng và CNTT nói chung.
+Chúc các b?n thành công và h?nh phúc !!!
+^D
+
+#3
+$ mkdir athena
+$ cd athena/
+$ mkdir class1
+$ mkdir class2
+$ mkdir class3/Linux -p
+$ mkdir class4/ccna -p
+$ mkdir class5/ccnp -p
+$ mkdir class6/mcsa -p
+$ cd class2
+$ mkdir basic_network
+$ cd ..
+$ cd class6
+$ mkdir ceh
+$ cd ../../
+
+#4
+$ cp thegioimang.txt athena/class1
+$ cp thegioimang.txt athena/class2
+$ cp thegioimang.txt athena/class3
+$ cp thegioimang.txt athena/class4
+
+$ touch ntk1.txt ntk2.txt
+$ cp ntk1.txt athena/class5
+$ cp ntk2.txt athena/class6
+$ pwd
+/home/kiennt/Documents/Linux/BaiTapLinux/bai5
+
+#5
+$ rm class1/thegioimang.txt 
+$ rm class3/thegioimang.txt 
+
+#6
+$ cd athena/
+$ mv class4/ccna class5/ccnp/
+$ mv class3/Linux class6/ceh

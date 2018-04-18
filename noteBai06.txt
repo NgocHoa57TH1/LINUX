@@ -1,0 +1,116 @@
+#Cau 1
+$HOME
+
+#Cau 2
+cd ../../etc
+
+#Cau 3
+cd /urs/lib
+
+#Cau 4
+ls -a $HOME
+
+#Cau 5
+ls -aR $HOME
+
+#Cau 6
+
+alias lietke = "ls -l"
+lietke
+
+#Cau 7
+alias lietke = "ls -l > home.list"
+
+#Cau 8
+mv home.list homelist.txt
+
+#Cau 9
+mkdir $HOME/linux2002
+
+#Cau 10
+cp homelist.txt $HOME/linux2002
+
+#Cau 11
+ls -la /etc/[bkn]*
+
+#Cau 12
+ls -la /etc/[m-t]*
+
+#Cau 13
+ls -la /etc/?h*
+
+#Cau 14
+ls -la /etc/*a
+
+#Cau 15
+ls -p /etc/[ad-e]*
+
+#Cau 16
+touch $HOME/-myfile
+
+#Cau 17
+rm $HOME/-myfile
+
+#Cau 18
+cd $HOME/linux2002/
+touch hello hello1 helloABC
+ls -l home
+ls -l home?
+ls -l home*
+
+#Cau 19
+ls -r /boot > $HOME/bootlist.txt
+
+#Cau 20
+grep sv /etc/passwd
+
+#Cau 21
+grep /bin/bash /etc/passwd
+
+#Cau 22
+grep -v /bin/false /etc/passwd
+
+#Cau 23
+#rwxr-xr-x: 755: Owner(Read, Write, Execute) - Group(Read, Execute) - Other(Read, Execute)
+#r-xrwxrw-: 576: Owner(Read, Execute) - Group(Read, Write, Execute) - Other(Read, Write)
+#rw-r--r--: 644: Owner(Read, Write) - Group(Read) - Other(Read)
+
+#Cau 24
+chmood 640 $HOME/*.ttf
+
+#Cau 25
+
+#Báo l?i Access Deny, không có quy?n truy c?p
+#N?u không quy?n th?c thi th? ngý?i dùng không th? truy c?p vào thý m?c
+
+#Cau 27
+cat /etc/services|tail -n20
+cat /etc/services|head -n20
+
+#Cau 28
+who
+
+#Cau 29
+tar -cvf linux2002.tar.gz $HOME/linux2002
+
+#Cau 30
+
+#clear: Xóa màn h?nh console
+#........
+
+#cut: Xu?t ra các trý?ng ho?c c?t c? th?:
+#cut -f FIELD_LIST filename
+#Trong ðó:
+#FIELD_LIST là 1 danh sách các c?t ðý?c hi?n th?. Danh sách này ch?a các s? c?t ðý?c phân cách b?i d?u ph?y “,”.
+#........
+
+#uniq: Lo?i b? các d?ng ch? gi?ng và k? nhau
+# uniq {tên t?p}
+#.......
+
+#tr: Chuy?n ð?i các k? t?. 
+#tr {m?u-1} {m?u-2}?
+#Ví d? sau s? chuy?n ð?i a thành 1 và * thành b
+#$ tr "a*" "1b" < filename?
+#Ví d? sau s? chuy?n ð?i ch? thý?ng thành ch? hoa:
+#$ tr "[a-z]" "[A-Z]" < filename
