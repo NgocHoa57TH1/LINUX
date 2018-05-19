@@ -1,0 +1,10 @@
+print(" moi ban nhap a,b :")
+a = int(input("a= "))
+b = int(input("b= "))
+print "%d + %d 		 = %d" %(a,b,a+b)
+print "%d - %d 		 = %d" %(a,b,a-b)
+print "%d x %d 		 = %d" %(a,b,a*b)
+print "%d / %d 		 = %d" %(a,b,float(a)/b)
+print "%d chia lay du %d = %d" %(a,b,a%b)
+print "%d ^ %d 		 = %d" %(a,b,a**b)
+
